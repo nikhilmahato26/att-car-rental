@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --brand-purple: #2E1065;
+    --brand-purple-dark: #1E0845;
+    --brand-purple-light: #4C1D95;
+    --brand-blue: #1D4ED8;
+    --brand-blue-dark: #1E40AF;
+    --brand-blue-light: #3B82F6;
+    --brand-green: #10B981;
+    --brand-whatsapp: #25D366;
+    --surface: #FFFFFF;
+    --surface-alt: #F8FAFC;
+    --surface-dark: #0F172A;
+    --text-primary: #0F172A;
+    --text-secondary: #475569;
+    --border-light: #E2E8F0;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+
+  body {
+    background-color: #FAFAFB;
+    color: #0F172A;
+    overflow-x: hidden;
+  }
+}
+
+/* Custom Utilities */
+.glass-effect {
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.glass-dark {
+  background: rgba(15, 23, 42, 0.85);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+
+.hero-overlay {
+  background: linear-gradient(
+    135deg,
+    rgba(30, 8, 69, 0.9) 0%,
+    rgba(29, 78, 216, 0.82) 65%,
+    rgba(15, 23, 42, 0.92) 100%
+  );
+}
+
+.card-hover {
+  transition: all 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 30px -8px rgba(30, 27, 75, 0.12), 0 8px 12px -6px rgba(30, 27, 75, 0.08);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F1F5F9;
+}
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}
