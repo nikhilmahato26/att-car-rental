@@ -70,17 +70,18 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking }) => {
       <header
         className={`sticky top-0 z-40 transition-all duration-300 ${
           isScrolled
-            ? "bg-white/95 backdrop-blur-md shadow-md py-3 border-b border-slate-100"
-            : "bg-white py-4 shadow-sm"
+            ? "bg-white/95 backdrop-blur-md shadow-md py-2 sm:py-2.5 border-b border-slate-100"
+            : "bg-white py-2.5 sm:py-3.5 shadow-sm"
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
           {/* Brand Logo */}
-          <a href="#home" className="flex items-center group relative w-40 sm:w-48 h-14 sm:h-16 shrink-0">
+          <a href="#home" className="flex items-center group relative w-28 sm:w-56 md:w-56 h-16 sm:h-20 md:h-24 shrink-0">
             <Image 
-              src="/logo.png" 
+              src="/logo.jpeg" 
               alt="ATT Car Rental Logo" 
               fill
+              priority2
               className="object-contain object-left group-hover:scale-105 transition-transform"
             />
           </a>
@@ -145,9 +146,9 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking }) => {
         <div className="fixed inset-0 z-50 lg:hidden flex flex-col bg-slate-900/60 backdrop-blur-sm animate-fadeIn">
           <div className="bg-white w-full max-w-sm ml-auto h-full flex flex-col p-6 shadow-2xl overflow-y-auto">
             <div className="flex items-center justify-between pb-4 border-b border-slate-100">
-              <div className="flex items-center gap-2 relative w-32 h-10">
+              <div className="flex items-center gap-2 relative w-28 h-16">
                 <Image 
-                  src="/logo.png" 
+                  src="/logo.jpeg" 
                   alt="ATT Car Rental Logo" 
                   fill
                   className="object-contain object-left"

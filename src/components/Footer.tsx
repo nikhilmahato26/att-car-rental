@@ -13,12 +13,12 @@ export const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-slate-800">
           {/* Col 1: Brand & Tagline (2 cols on lg) */}
           <div className="lg:col-span-2 space-y-4">
-            <div className="flex items-center gap-3 relative w-48 h-16">
+            <div className="flex items-center relative w-56 sm:w-64 h-20 sm:h-24 bg-white p-2 rounded-2xl shadow-md">
               <Image 
-                src="/logo.png" 
+                src="/logo.jpeg" 
                 alt="ATT Car Rental Logo" 
                 fill
-                className="object-contain object-left"
+                className="object-contain p-1"
               />
             </div>
 
