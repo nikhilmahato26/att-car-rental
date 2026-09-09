@@ -76,24 +76,13 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking }) => {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
           {/* Brand Logo */}
-          <a href="#home" className="flex items-center gap-3 group">
-            <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-[#2E1065] to-[#1D4ED8] p-2 flex items-center justify-center shadow-md shadow-purple-950/20 group-hover:scale-105 transition-transform">
-              <Car className="w-6 h-6 text-white" />
-            </div>
-            <div className="flex flex-col">
-              <div className="flex items-center gap-1.5">
-                <span className="font-extrabold text-2xl tracking-tight text-[#1E1B4B]">
-                  ATT
-                </span>
-                <span className="font-bold text-xl tracking-tight text-[#1D4ED8]">
-                  CAR RENTAL
-                </span>
-                <span className="w-2 h-2 rounded-full bg-emerald-500"></span>
-              </div>
-              <span className="text-[10px] font-semibold tracking-widest text-slate-500 uppercase -mt-1">
-                Travel Smart, Achieve More
-              </span>
-            </div>
+          <a href="#home" className="flex items-center group relative w-40 sm:w-48 h-14 sm:h-16 shrink-0">
+            <Image 
+              src="/logo.png" 
+              alt="ATT Car Rental Logo" 
+              fill
+              className="object-contain object-left group-hover:scale-105 transition-transform"
+            />
           </a>
 
           {/* Desktop Nav Links */}
@@ -156,11 +145,13 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking }) => {
         <div className="fixed inset-0 z-50 lg:hidden flex flex-col bg-slate-900/60 backdrop-blur-sm animate-fadeIn">
           <div className="bg-white w-full max-w-sm ml-auto h-full flex flex-col p-6 shadow-2xl overflow-y-auto">
             <div className="flex items-center justify-between pb-4 border-b border-slate-100">
-              <div className="flex items-center gap-2">
-                <div className="w-8 h-8 rounded-lg bg-[#2E1065] flex items-center justify-center text-white font-black text-sm">
-                  ATT
-                </div>
-                <span className="font-bold text-slate-900 text-lg">ATT Car Rental</span>
+              <div className="flex items-center gap-2 relative w-32 h-10">
+                <Image 
+                  src="/logo.png" 
+                  alt="ATT Car Rental Logo" 
+                  fill
+                  className="object-contain object-left"
+                />
               </div>
               <button
                 onClick={() => setMobileMenuOpen(false)}

@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 import { Phone, Mail, MapPin, MessageSquare, Car, ArrowUpRight, Heart, Shield } from "lucide-react";
 import { BUSINESS_INFO, getWhatsAppLink, LOCAL_SEO_KEYWORDS } from "@/data/attData";
 
@@ -12,19 +13,13 @@ export const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-slate-800">
           {/* Col 1: Brand & Tagline (2 cols on lg) */}
           <div className="lg:col-span-2 space-y-4">
-            <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#2E1065] to-[#1D4ED8] p-2 flex items-center justify-center text-white">
-                <Car className="w-5 h-5" />
-              </div>
-              <div className="flex flex-col">
-                <div className="flex items-center gap-1.5">
-                  <span className="font-extrabold text-2xl text-white tracking-tight">ATT</span>
-                  <span className="font-bold text-xl text-blue-400 tracking-tight">CAR RENTAL</span>
-                </div>
-                <span className="text-[10px] font-semibold tracking-widest text-slate-400 uppercase -mt-0.5">
-                  {BUSINESS_INFO.tagline}
-                </span>
-              </div>
+            <div className="flex items-center gap-3 relative w-48 h-16">
+              <Image 
+                src="/logo.png" 
+                alt="ATT Car Rental Logo" 
+                fill
+                className="object-contain object-left"
+              />
             </div>
 
             <p className="text-slate-400 text-sm leading-relaxed max-w-sm">
