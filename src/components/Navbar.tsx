@@ -81,7 +81,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking }) => {
               src="/logo.jpeg" 
               alt="ATT Car Rental Logo" 
               fill
-              priority2
+              priority
               className="object-contain object-left group-hover:scale-105 transition-transform"
             />
           </a>
