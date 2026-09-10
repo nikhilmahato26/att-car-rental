@@ -15,7 +15,7 @@ export const Fleet: React.FC<FleetProps> = ({ onSelectVehicle }) => {
   const filteredFleet = FLEET.filter((vehicle) => {
     if (filter === "all") return true;
     if (filter === "sedan") return vehicle.id === "etios";
-    if (filter === "suv") return vehicle.id === "innova-crysta";
+    if (filter === "suv") return vehicle.id === "innova-crysta" || vehicle.id === "ertiga";
     if (filter === "luxury") return vehicle.id === "bmw";
     if (filter === "group") return vehicle.id === "tempo-traveller" || vehicle.id === "buses";
     return true;
@@ -42,7 +42,7 @@ export const Fleet: React.FC<FleetProps> = ({ onSelectVehicle }) => {
             {[
               { id: "all", label: "All Vehicles" },
               { id: "sedan", label: "Sedans" },
-              { id: "suv", label: "Innova Crysta MPV" },
+              { id: "suv", label: "MPVs (Innova & Ertiga)" },
               { id: "luxury", label: "BMW Luxury" },
               { id: "group", label: "Tempo Traveller & Buses" },
             ].map((tab) => (

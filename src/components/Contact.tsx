@@ -246,6 +246,7 @@ export const Contact: React.FC = () => {
                       <option value="Local Cab Booking">Local Cab Booking (Bangalore)</option>
                       <option value="Outstation Cab Service">Outstation Cab Service</option>
                       <option value="Airport Transfer (BLR)">Airport Transfer (BLR Airport)</option>
+                      <option value="Maruti Ertiga Rental">Maruti Suzuki Ertiga Rental</option>
                       <option value="Innova Crysta Rental">Toyota Innova Crysta Rental</option>
                       <option value="Tempo Traveller Rental">Tempo Traveller Rental (12-17 Seater)</option>
                       <option value="Luxury Bus Rental">Luxury Bus Rental (Group)</option>

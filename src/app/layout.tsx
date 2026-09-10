@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://attcarrental.com"),
   title: "ATT Car Rental | Reliable Car Rental & Cab Services in Bangalore",
   description:
-    "ATT Car Rental offers dependable cab services, airport transfers (BLR), local and outstation car rental, Innova Crysta, Etios, BMW luxury cars, Tempo Traveller, and bus rentals in Bangalore. Call 8861955535 / 8088986497.",
+    "ATT Car Rental offers dependable cab services, airport transfers (BLR), local and outstation car rental, Innova Crysta, Ertiga, Etios, BMW luxury cars, Tempo Traveller, and bus rentals in Bangalore. Call 8861955535 / 8088986497.",
   keywords: LOCAL_SEO_KEYWORDS.join(", "),
   authors: [{ name: BUSINESS_INFO.proprietor }],
   creator: BUSINESS_INFO.name,

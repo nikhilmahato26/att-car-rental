@@ -90,6 +90,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
           {/* Fleet Highlights pills */}
           <div className="pt-2 flex flex-wrap justify-center items-center gap-2 sm:gap-4 text-xs font-semibold text-slate-300">
             <span className="px-3 py-1 rounded-lg bg-white/5 border border-white/10">Toyota Etios</span>
+            <span className="px-3 py-1 rounded-lg bg-white/5 border border-white/10">Maruti Ertiga</span>
             <span className="px-3 py-1 rounded-lg bg-white/5 border border-white/10">Innova Crysta</span>
             <span className="px-3 py-1 rounded-lg bg-white/5 border border-white/10">BMW Luxury Sedan</span>
             <span className="px-3 py-1 rounded-lg bg-white/5 border border-white/10">Tempo Traveller</span>

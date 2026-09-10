@@ -97,6 +97,9 @@ export const Footer: React.FC = () => {
                 <a href="#fleet" className="hover:text-white transition-colors">Toyota Etios (Sedan)</a>
               </li>
               <li>
+                <a href="#fleet" className="hover:text-white transition-colors">Maruti Suzuki Ertiga (MPV)</a>
+              </li>
+              <li>
                 <a href="#fleet" className="hover:text-white transition-colors">Toyota Innova Crysta (MPV)</a>
               </li>
               <li>
